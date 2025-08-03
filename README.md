@@ -2,7 +2,7 @@
 Welcome to my portfolio website! This project was created as part of the July 2025 Cohort Hackathon 1: Portfolio Challenge.
 
 ## Live Demo: 
-
+https://wn-marie.github.io/Mary-Wairimu-geoinformatics-basc-portfolio/
 
 
 # 🌟 Project overview
