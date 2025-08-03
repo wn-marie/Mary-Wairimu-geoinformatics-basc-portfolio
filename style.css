@@ -1,0 +1,1066 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/* Color Palette */
+:root {
+    --primary: #2563eb;
+    --primary-dark: #1d4ed8;
+    --secondary: #059669;
+    --accent: #7c3aed;
+    --dark: #1e293b;
+    --darker: #0f172a;
+    --light: #f1f5f9;
+    --white: #ffffff;
+
+    
+   /* /* Shadows ya kufunika kabisa only do it last
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-hover: 0 10px 15px rgba(0, 0, 0, 0.1);
+    */
+    /* Transitions */
+    --transition: all 0.3s ease;
+}
+
+/*body of the page*/
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: var(--dark);
+    background-color: var(--light);
+}
+
+/* whole general body from about me to down most */
+.container {
+    max-width: 2200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.section {
+    padding: 10px 0;
+}
+.menu-icon {
+    margin-top: 2rem;/* display: none; */
+    background-color: none;
+    color: var(--white);
+    font-size: 50px;
+    /* padding: 1000px 20px; */
+    cursor: pointer;
+    margin-bottom: auto;
+}
+
+/*Hero Section */
+.hero {
+    padding: 120px 0 0px;
+    background-color: var(--darker);
+    color: var(--white);
+    text-align: center;
+    font-size: 200%;
+    background-image: url('AWWW.png');
+    background-size: cover;      
+    background-repeat: no-repeat; 
+    background-position: center; 
+    height: 100vh;
+    /* font-family: sans-serif; */
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+/* ile ya Hi, I'm */
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    color: var(--white);
+    text-align: center;
+}
+/*ile ya Geoinformatics Student & GIS Specialist*/
+.hero-content h2 {
+    font-size: 1.5rem;
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    margin-bottom: 2rem;
+    color: var(--white);
+    text-align: center; 
+    
+}
+/*ile ya mapping the future*/
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    max-width: fit-content;
+    margin-left: auto;
+    /* font-variant-ligatures: additional-ligaturess; */
+    margin-right: auto;
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+}
+
+.highlight { 
+    color: #fbbf24;
+} 
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    /* border: rgb(248, 248, 242) 2px solid; */
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    margin-top: 100px;
+    margin-left: fit-content;
+    margin-right: 30px;
+    transition: var(--transition);
+    background: linear-gradient(90deg, var(--primary), var(--accent));
+    color: var(--white);
+    font-size: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    transform: translateY(-20px);
+     box-shadow: var(--shadow-hover);
+    }
+
+/* .primary-btn {
+    background: var(--primary);
+    color: var(--secondary); 
+}
+
+.primary-btn:hover {
+    background: var(--primary-dark);
+} 
+
+.secondary-btn {
+    background: transparent;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+}
+
+.secondary-btn:hover {
+    background: var(--primary);
+    color: var(--white);
+}
+
+.small-btn {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    margin: 5px;
+}   colouring hover 
+
+
+}*/
+/* Section Titles */
+.section-title {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: var(--dark);
+    position: relative;
+}
+/* Section Title Underline */
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: var(--primary);
+    border-radius: 2px;
+
+
+/* Navigation */
+/* .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: var(--shadow);
+    z-index: 1000;
+} */
+
+/*ya juu zaidi*/
+/* .nav-container {
+    max-width: 1200px;
+    background-image: var(--dark #000);
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 20px;
+    font-display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    width: auto;
+} */
+
+/* .nav-logo h2 {
+    color: var(--primary);
+} */
+
+/* /* .nav-menu {
+    display: flex;
+    list-style: none;
+    
+} */
+
+/* .nav-item {
+    margin-left: 2rem;
+} */
+
+/* about programming ...contacts */
+/* .nav-link {
+    color: var(--secondary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: var(--transition);
+    position: relative;
+    padding: 8px 16px;  
+} */
+/* painting color ya maroon at navigation bar */
+/* .nav-link:hover {
+    color: var(--primary);
+    background: #caf0f8
+} */
+}
+
+/* Hamburger button */
+/* .menu-icon {
+  display: block;
+  background-color: #333;
+  color: white;
+  font-size: 30px;
+  padding: 10px 20px;
+  cursor: pointer;
+} */
+/* Navigation styling */
+
+/* .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--primary);
+    transition: var(--transition);
+} */
+
+/* .nav-link:hover::after {
+    width: 100%;
+} */
+
+/* About Section */
+.about-content {
+    /* max-width: fit-content;
+    display: flex;
+    text-wrap: wrap;
+    margin: 0 auto;
+    /* margin-left: 600px; 
+    font-style: italic;
+    flex-wrap: wrap;
+    flex: 1;
+    align-items: center;
+    display: flex;
+    align-items: flex-start; /* align top edges
+    gap: 20px;
+    /* max-width: 1000px;
+    margin: 0 auto;     */ 
+    display: flex;
+    flex-wrap: wrap;           /* responsive on smaller screens */
+    align-items: flex-start;   /* aligns image and text at the top */
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+    /* font-style: italic; */
+    flex-direction: row; /* aligns image and text side by side */
+}
+.about-text {
+    /* flex: 1; */
+    /* margin-right: fit-content; doesn't get too wide */
+    /*min-width: 500px; /* doesn't get too narrow */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-start; */
+    gap: 30px; /* space between paragraphs */
+    flex: 1 1 0; /* allows text to grow and shrink */
+    min-width: 400px; /* ensures text doesn't get too narrow */
+    margin-left: 0;
+    margin-top: 0;
+    align-items: flex-start; /* aligns text to the left */
+    justify-content: flex-start;
+}
+
+.about-meimage {
+    /* width: 400px;
+    height: 400px;
+    /* background-position: flex-start; 
+    border-right-style: solid;
+    border-right-color: var(--primary);
+    background-image: url('abtme.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+    border-top: 4px solid var(--primary);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* object-fit: cover; 
+    flex-shrink: 20; */
+    width: 400px;
+    height: 400px;
+    background-image: url('abtme.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: o auto;
+    border-radius: 100%;
+    border-right: 4px solid var(--primary);
+    border-top: 4px solid var(--primary);
+    /* border-left: 8px solid var(--primary) ; */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex-shrink: 40; /* kataa too much shrinking ya image inside */
+    flex: 0 0 400px; /* ensures image doesn't shrink too much */
+    margin-right: 0;
+
+}
+.about-meimage:hover { 
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
+    filter: brightness(0.9);
+    transition: transform 1.5s ease-in-out;
+    transform-origin: left; 
+   
+}
+.about-text1 {
+    flex: 1;
+    margin-right: fit-content; /* doesn't get too wide */
+    min-width: 500px; /* doesn't get too narrow */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* aligns text to the top */
+    gap: 30px; /* space between paragraphs */
+    align-items: flex-start; /* aligns text to the left */
+    background-color: gradient(var(--primary), var(--accent));
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.about-meimage1 {
+    /* width: 400px;
+    height: 400px;
+    /* background-position: flex-start; 
+    border-right-style: solid;
+    border-right-color: var(--primary);
+    background-image: url('abtme.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+    border-top: 4px solid var(--primary);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* object-fit: cover; 
+    flex-shrink: 20; */
+    width: 400px;
+    height: 400px;
+    background-image: url('focusing_2x.webp');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: o auto;
+    border-radius: 100%;
+    border-right: 4px solid var(--primary);
+    border-top: 4px solid var(--primary);
+    /* border-left: 8px solid var(--primary) ; */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex-shrink: 40; /* kataa too much shrinking ya image inside */
+}
+.about-meimage1:hover { 
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
+    filter: brightness(0.9);
+    transition: transform 1.5s ease-in-out;
+    transform-origin: left; 
+}
+.about-text2 {
+    flex: 1;
+    margin-right: fit-content; /* doesn't get too wide */
+    min-width: 500px; /* doesn't get too narrow */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* aligns text to the top */
+    gap: 30px; /* space between paragraphs */
+    align-items: flex-start; /* aligns text to the left */
+    background-color: gradient(var(--primary), var(--accent));
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    perspective: 1000px; /* for 3D effect */
+}
+
+.about-meimage2 {
+    /* width: 400px;
+    height: 400px;
+    /* background-position: flex-start; 
+    border-right-style: solid;
+    border-right-color: var(--primary);
+    background-image: url('abtme.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+    border-top: 4px solid var(--primary);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* object-fit: cover; 
+    flex-shrink: 20; */
+    width: 400px;
+    height: 400px;
+    background-image: url('visionf.png');
+    background-size: 85%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: o auto;
+    border-radius: 100%;
+    border-right: 4px solid var(--primary);
+    border-top: 4px solid var(--primary);
+    /* border-left: 8px solid var(--primary) ; */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex-shrink: 40;
+}
+.about-meimage2:hover { 
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
+    filter: brightness(0.9);
+    transition: transform 1.5s ease-in-out;
+    transform-origin: left; 
+   
+}
+/* Hide radio buttons */
+.about-tabs input[type="radio"] {
+    display: none;
+}
+/* Tab labels styling */
+.tab-labels {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+.tab-labels label {
+    padding: 10px 30px;
+    background: var(--primary);
+    color: var(--white);
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    /* transition: background 0.3s, color 0.3s; */
+}
+.tab-labels label:hover,
+#tab1:checked ~ .tab-labels label[for="tab1"],
+#tab2:checked ~ .tab-labels label[for="tab2"],
+#tab3:checked ~ .tab-labels label[for="tab3"] 
+{
+    background: var(--accent);
+    color: var(--white);
+}
+/* Tab content styling */
+.tab-content {
+    display: none;
+    animation: flipIn 0.7s;
+}
+#tab1:checked ~ .tab1-content,
+#tab2:checked ~ .tab2-content,
+#tab3:checked ~ .tab3-content {
+    display: block;
+}
+/* Flip animation */
+@keyframes flipIn {
+    from {
+        transform: rotateY(90deg);
+        opacity: 0;
+    }
+    to {
+        transform: rotateY(0deg);
+        opacity: 1;
+    }
+}
+/* Programming Languages Section */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+/* mwisho wa first skill card - this is for python */
+.skill-card {
+    background: var(--white);
+    background-image: url('python3.png');
+    background-size: 100%;
+    /* background-repeat: no-repeat; */
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    border-top: 4px solid #3776ab
+}
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+    background-image: var(--primary)
+}
+/* mwisho wa first skill card - this is for Javascript */
+.skill-card1 {
+    background: var(--white);
+    background-image: url('JAVA.png');
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    border-top: 4px solid #f0db4f;
+}
+
+.skill-card1:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+    background-image: var(--primary)
+}
+
+/* mwisho wa first skill card - this is for C */
+.skill-card2 {
+    background: var(--white);
+    background-image: url('C.jpeg');
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    border-top: 4px solid #047857
+}
+
+.skill-card2:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+    background-image: var(--primary)
+}
+
+/* mwisho wa first skill card - this is for C++ */
+.skill-card3 {
+    background: var(--white);
+    background-image: url('c++.jpeg');
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    border-top: 4px solid #00599c;
+}
+
+.skill-card3:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+    background-image: var(--primary)
+}
+
+/* .skill-icon {
+    font-size: 3rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.skill-card h3 {
+    margin-bottom: 0.5rem;
+    color: var(--dark);
+}
+
+.skill-card p {
+    color: #64748b;
+} */
+
+/* Education Section */
+.education-content {
+    max-width: 700px;
+    margin: 0 auto 2rem;
+}
+
+.education-item {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    margin-bottom: 2rem;
+    border-left: 4px solid var(--secondary);
+}
+
+.education-item h3 {
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.education-item h4 {
+    color: var(--dark);
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.education-item p {
+    color: #64748b;
+    line-height: 1.6;
+}
+
+.cv-download {
+    text-align: center;
+}
+
+/* Interests section */
+/* --- Enhanced Interest Card Styles (Add to the end of style.css) --- */
+
+/* General enhancement for all interest cards */
+.interest-card {
+    /* Keep your existing animation and base styles */
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: var(--shadow);
+    transition: transform 0.4s cubic-bezier(.77,0,.18,1), box-shadow 0.4s, background-color 0.3s;
+    transform-style: preserve-3d;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 0.8s forwards;
+    min-width: 250px;
+    max-width: 220px;
+    margin-top: 2rem; /* Add some top margin for spacing */
+    margin-bottom: 2rem; /* Add some bottom margin for spacing */
+}
+
+/* Interests Section */
+.interests-grid {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive columns */
+    gap: 2rem; /* Space between items */
+    margin-top: 2rem; /* Add margin top back */
+    /* Remove the flexbox properties that were overriding the grid */
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* align-items: stretch; */
+    /* justify-content: center; */
+}
+
+/* Specific styles for each interest card based on type */
+
+/* 1. Artificial Intelligence (🧠) - Purple/Blue theme */
+.interests-grid .interest-card:nth-child(1) { /* First card */
+    background: linear-gradient(135deg, #f5f3ff 0%, #ede9fe 100%); /* Light purple gradient */
+    border-top: 4px solid #7c3aed; /* var(--accent) purple */
+}
+
+.interests-grid .interest-card:nth-child(1):hover {
+    background: linear-gradient(135deg, #ede9fe 0%, #ddd6fe 100%);
+    border-top: 4px solid #6d28d9; /* Darker purple on hover */
+}
+
+/* 2. Emerging Technologies (🤖) - Orange/Red theme */
+.interests-grid .interest-card:nth-child(2) { /* Second card */
+    background: linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%); /* Light orange gradient */
+    border-top: 4px solid #f97316; /* Orange */
+}
+
+.interests-grid .interest-card:nth-child(2):hover {
+    background: linear-gradient(135deg, #ffedd5 0%, #fed7aa 100%);
+    border-top: 4px solid #ea580c; /* Darker orange on hover */
+}
+
+/* 3. Geospatial Innovation (🌍) - Green/Blue theme */
+.interests-grid .interest-card:nth-child(3) { /* Third card */
+    background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%); /* Light green gradient */
+    border-top: 4px solid #059669; /* var(--secondary) green */
+}
+
+.interests-grid .interest-card:nth-child(3):hover {
+    background: linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%);
+    border-top: 4px solid #047857; /* Darker green on hover */
+}
+
+/* 4. Gaming & Entertainment (🎮) - Red/Pink theme */
+.interests-grid .interest-card:nth-child(4) { /* Fourth card */
+    background: linear-gradient(135deg, #fdf2f8 0%, #fce7f3 100%); /* Light pink gradient */
+    border-top: 4px solid #ec4899; /* Pink */
+}
+
+.interests-grid .interest-card:nth-child(4):hover {
+    background: linear-gradient(135deg, #fce7f3 0%, #fbcfe8 100%);
+    border-top: 4px solid #db2777; /* Darker pink on hover */
+}
+
+
+/* Refine the hover effect for all cards */
+.interest-card:hover {
+    /* Use the enhanced theme colors from above */
+    transform: translateY(-8px); /* Adjusted translateY for subtlety */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow */
+}
+
+/* Refine the icon color to match the theme better  */
+.interests-grid .interest-card:nth-child(1) .interest-card i { color: #7c3aed; } /* Purple icon */
+.interests-grid .interest-card:nth-child(2) .interest-card i { color: #f97316; } /* Orange icon */
+.interests-grid .interest-card:nth-child(3) .interest-card i { color: #059669; } /* Green icon */
+.interests-grid .interest-card:nth-child(4) .interest-card i { color: #ec4899; } /* Pink icon */
+
+
+/* Adjust fadeUp animation slightly if needed */
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+/* Project Details Section */
+.project-details {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e2e8f0;
+}
+
+.project-details h4 {
+    margin-bottom: 1rem;
+    color: var(--dark);
+    font-size: 1.2rem;
+}
+
+/* Screenshot Gallery */
+.screenshot-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Responsive grid */
+    gap: 15px;
+    margin-bottom: 1.5rem;
+}
+
+.screenshot-item {
+    text-align: center;
+}
+
+.screenshot-img {
+    width: 100%;
+    height: 120px; /* Fixed height for consistency */
+    object-fit: cover; /* Ensures image fills the box, cropping if necessary */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.screenshot-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.screenshot-caption {
+    margin-top: 5px;
+    font-size: 0.8rem; /* Smaller font for captions */
+    color: #64748b;
+}
+
+/* Ensure project links are below the gallery */
+.project-links {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e2e8f0;
+}
+
+/* --- Add these rules with the other screenshot/gallery CSS --- */
+
+/* Map Display Area (for Flood Risk Project) */
+.map-display {
+    margin: 1rem 0;
+    padding: 1.5rem;
+    /* --- Combined Enhancement --- */
+    background: linear-gradient(to bottom right, #f0fdf4, #dcfce7); /* Very light green gradient */
+    border: 1px solid #bbf7d0; /* Light green border */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08); /* Soft shadow */
+    /* --------------------------- */
+    text-align: center;
+}
+
+.map-display p {
+    margin-bottom: 0.5rem;
+    color: var(--dark);
+}
+
+.map-note {
+    font-size: 0.85rem;
+    color: #64748b;
+    margin-top: 0.5rem;
+}
+
+/* Refine the project card hover */
+.project-card {
+    /* background: var(--white); */
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s ease forwards;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add specific transition */
+}
+
+/* Stagger the animation for each card */
+.project-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.project-card:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15); /* Use direct value or defined var */
+}
+
+/* If you display screenshots inline like <img src=... class="project-screenshot"> */
+.project-screenshot, .project-screenshots img { /* Target your screenshot images */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 5px; /* Optional: round corners */
+}
+.project-screenshot:hover, .project-screenshots img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Make the 'View Report' etc. buttons more noticeable */
+.project-links .btn {
+    /* ... existing button styles ... */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease; /* Ensure transition includes background */
+}
+/* Add a class for buttons you want to pulse */
+.btn.pulse {
+    animation: pulse 2s infinite;
+}
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.4); } /* Primary color glow */
+    70% { box-shadow: 0 0 0 10px rgba(37, 99, 235, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(37, 99, 235, 0); }
+}
+/* Apply to download buttons in projects:
+<a href=... class="btn small-btn pulse" download>View Assignment</a>
+*/
+
+/* Contact Section */
+/* .contact-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.contact-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--dark);
+}
+
+.contact-info p {
+    color: #64748b;
+    margin-bottom: 2rem;
+}
+
+.contact-form {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e2e8f0;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+} */
+
+/* --- Enhanced Contact Section Styles (Add to the end of style.css) --- */
+
+/* Improve overall layout spacing */
+#contact .contact-container {
+    gap: 3rem; /* Increase gap between info and form */
+}
+
+/* Style the main heading in contact info */
+#contact .contact-info h3 {
+    font-size: 1.8rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+/* Style paragraphs in contact info */
+#contact .contact-info > p {
+    margin-bottom: 2rem;
+    color: #4b5563; /* Slightly darker grey */
+    line-height: 1.7;
+}
+
+/* Container for contact details list */
+.contact-details {
+    margin-bottom: 2rem;
+}
+
+/* Individual contact item styling */
+.contact-item {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    gap: 1rem; /* Space between icon and text */
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #f9fafb; /* Very light grey background */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-item:hover {
+    background-color: #f3f4f6; /* Slightly darker on hover */
+    transform: translateX(5px); /* Subtle shift on hover */
+}
+
+/* Style for contact icons (emojis) */
+.contact-icon {
+    font-size: 1.5rem; /* Make emojis bigger */
+    flex-shrink: 0; /* Prevent icon from shrinking */
+}
+
+/* Style text within contact items */
+.contact-item div {
+    flex: 1; /* Allow text container to take remaining space */
+}
+
+.contact-item strong {
+    display: block; /* Make labels block elements */
+    margin-bottom: 0.2rem;
+    color: var(--dark);
+}
+
+.contact-item p {
+    margin: 0; /* Remove default paragraph margin */
+    color: #6b7280; /* Medium grey for details */
+}
+
+/* Style links */
+.contact-item a {
+    color: var(--primary); /* Use primary color */
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+    color: var(--primary-dark); /* Darken on hover */
+    text-decoration: underline; /* Underline on hover */
+}
+
+
+
+
+/* Footer */
+footer {
+    background: var(--darker);
+    color: var(--white);
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+
+/* Responsive Design */
+/* @media screen and (max-width: 768px) {
+    .nav-menu {
+        display: none;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .section {
+        padding: 60px 0;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .hero {
+        padding: 100px 0 60px;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+    .interests-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-links {
+        flex-direction: column;
+    }
+
+    .project-links .btn {
+        width: 100%;
+        margin: 5px 0;
+    }
+}  */
